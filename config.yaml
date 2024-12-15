@@ -1,0 +1,23 @@
+# Database Configuration
+database:
+  pin_table: "pin_data"
+  batch_size: 10
+  # Assuming 1 post every 15 minutes to complete in 30 years
+  posts_per_day: 96
+
+# Image Configuration
+image:
+  size: "600x400"
+  save_dir: "images"
+  rate_limit: 2  # seconds between requests
+
+# Social Media Configuration
+social:
+  platform: "bluesky"
+  post_interval: 900  # 15 minutes in seconds
+
+# Logging Configuration
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/chicago_lots.log"
